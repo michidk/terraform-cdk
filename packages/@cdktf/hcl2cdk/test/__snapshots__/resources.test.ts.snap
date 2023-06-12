@@ -67,7 +67,6 @@ class MyConvertedCode extends TerraformStack {
       name: "example-autoscaler",
       target: "target-for-example-autoscaler",
       zone: "us-east1-b",
-      timeouts: config.timeouts,
     });
   }
 }
@@ -218,7 +217,6 @@ class MyConvertedCode extends TerraformStack {
       file: "myfile",
       hash: Token.asString(Fn.filemd5("myfile")),
       key: "object_path",
-      timeouts: config.timeouts,
     });
   }
 }
@@ -339,7 +337,6 @@ class MyConvertedCode extends TerraformStack {
       metadata: {
         name: "secrets-xxx",
       },
-      timeouts: config.timeouts,
     });
   }
 }
@@ -369,7 +366,6 @@ class MyConvertedCode extends TerraformStack {
       metadata: {
         name: "secrets-xxx",
       },
-      timeouts: config.timeouts,
     });
   }
 }
